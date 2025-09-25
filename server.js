@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // ✅ Use dynamic port for Render
 
 // Middleware
 app.use(express.json());
 
-// Serve frontend
+// Serve frontend (if needed)
 app.use(express.static("public"));
 
 // In-memory books
@@ -13,6 +13,11 @@ let books = [
   { id: 1, title: "Atomic Habits", author: "James Clear" },
   { id: 2, title: "The Alchemist", author: "Paulo Coelho" }
 ];
+
+// Root route for Render health check
+app.get("/", (req, res) => {
+  res.send("📚 Book CRUD API is running on Render 🚀");
+});
 
 // --- API Routes ---
 // GET all books
@@ -51,4 +56,4 @@ app.delete("/books/:id", (req, res) => {
   res.json({ message: "Deleted", book: deleted });
 });
 
-app.listen(port, () => console.log(`📚 Server running at http://localhost:${port}`));
+app.listen(port, () => console.log(`📚 Server running on port ${port}`));
