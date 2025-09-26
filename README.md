@@ -1,12 +1,14 @@
-# 📚 Book Manager
+<h1 align="center">📚 Book Manager</h1>  
 
-A simple **Book Management Application** built with **Node.js, Express, and Vanilla JS**.  
-It lets you **Add, View, Update, and Delete books** with a clean UI and REST API support.
+<p align="center">
+A simple Book Management Application built with <b>Node.js</b>, <b>Express</b>, and <b>Vanilla JS</b>.  
+<br>  
+It allows you to <b>Add, View, Update, and Delete books</b> with a clean UI and REST API support.
+</p>
 
----
-
-## 🖼️ Project Preview
-![Book Manager UI](assets/Book%20Manager.png)
+<p align="center">
+  <img src="assets/Book%20Manager.png" width="700" alt="Book Manager Preview">
+</p>
 
 ---
 
