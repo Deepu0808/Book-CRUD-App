@@ -5,6 +5,11 @@ It lets you **Add, View, Update, and Delete books** with a clean UI and REST API
 
 ---
 
+## 🖼️ Project Preview
+![Book Manager UI](assets/Book%20Manager.png)
+
+---
+
 ## ✨ Features
 - 📖 Add new books with title & author  
 - ✏️ Update existing books  
